@@ -1,8 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# E-Commerce App
 
-First, run the development server:
+>A modern, full-stack e-commerce web application built with Next.js, TypeScript, and Tailwind CSS. This project demonstrates best practices in frontend development, UI/UX, and scalable architecture. Designed as a portfolio project to showcase my skills.
+
+## 🚀 Features
+
+- Responsive, accessible UI with reusable components
+- Product listing, search, and filtering
+- Shopping cart functionality
+- User authentication (coming soon)
+- Modern design with custom theming and dark mode
+- Fast performance and SEO-friendly
+
+## 🛠️ Tech Stack
+
+- [Next.js](https://nextjs.org/) (App Router)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Bun](https://bun.sh/) (optional)
+- [Vercel](https://vercel.com/) (deployment)
+
+## 📦 Getting Started
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -14,23 +34,29 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `src/app` — Application entry, pages, and layout
+- `src/components/ui` — Reusable UI components
+- `src/lib` — Utility functions
+- `public` — Static assets
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📝 Customization
 
-## Learn More
+- Easily update theme colors and fonts in `globals.css`
+- Add new components in `src/components/ui`
+- Extend functionality as needed
 
-To learn more about Next.js, take a look at the following resources:
+## 📄 License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is open source and available under the [MIT License](LICENSE).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 👤 Author
 
-## Deploy on Vercel
+**Kelvin Ha**  
+[kelvinhoang1232@gmail.com] 
+[LinkedIn](www.linkedin.com/in/minh-hoang-ha-4baaa7321) | [GitHub](https://github.com/Kelvinhaa?tab=repositories)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thank you for checking out my project! Feel free to reach out if you have questions!
