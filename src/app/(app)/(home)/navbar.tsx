@@ -51,7 +51,7 @@ export const Navbar = () => {
                  </NavbarItems>
                 ))}
             </div>
-            
+
             <div className='flex gap-x-5 items-center'>
                 <Button asChild variant={'ghost'}
                 className='border-0 text-black hover:text-amber-700 hover:border-0 transition-colors'>
