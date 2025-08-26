@@ -41,7 +41,7 @@ export const Navbar = () => {
     return (
         <nav className="h-20 justify-between flex border-b font-medium bg-amber-50" >
             <Link href='/' className='flex items-center'>
-                <span className={`text-5xl font-semibold ${inter.className}`}>Coffee</span>
+                <span className={`text-5xl font-semibold ${inter.className}`}>BrewMarket</span>
             </Link>
             <div className='flex items-center gap-x-4 lg:flex'>
                 {navbaritem.map((item, idx) => (

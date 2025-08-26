@@ -1,7 +1,8 @@
 const Page = () => {
     return (
         <div>
-            pricing
+            <title>Pricing</title>
+            
         </div>
     );
 }
