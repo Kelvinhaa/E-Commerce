@@ -19,12 +19,6 @@ export const Products: CollectionConfig = {
       required: true,
     },
     {
-      name: 'category',
-      type: 'relationship',
-      relationTo: 'categories',
-      required: true,
-    },
-    {
       name: 'images',
       type: 'array',
       fields: [
