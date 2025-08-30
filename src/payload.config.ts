@@ -23,6 +23,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
+  
   collections: [Users, Media, Categories, Products],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
