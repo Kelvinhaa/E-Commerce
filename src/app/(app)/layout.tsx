@@ -7,7 +7,7 @@ const dmsans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "BrewMarket",
+  title: "BrewMarkets",
   description: "Learn more about BrewMarket and our mission",
 };
 
