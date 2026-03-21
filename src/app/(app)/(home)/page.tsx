@@ -1,21 +1,18 @@
 import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import Image from "next/image";
 import Link from "next/link";
 
 export default async function Home() {
   return (
-     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-amber-100">
+  <div className="min-h-screen bg-gradient-to-b from-white via-amber-50/30 to-stone-100/70">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-16">
+      <section className="mx-auto w-full max-w-7xl px-4 py-16 md:px-6">
         <div className="text-center">
           <h1 className="text-5xl font-bold text-amber-900 mb-6">
             BrewMarket
           </h1>
-          <p className="text-xl text-amber-700 mb-8 max-w-2xl mx-auto">
-            Connect coffee shop owners with coffee enthusiasts. Buy premium beans, 
+          <p className="text-xl text-amber-800/90 mb-8 max-w-2xl mx-auto">
+            Connect Australian coffee shop owners with coffee enthusiasts. Buy premium beans, 
             equipment, and everything you need for the perfect brew.
           </p>
           <div className="flex gap-4 justify-center">
@@ -30,33 +27,33 @@ export default async function Home() {
       </section>
 
       {/* Search Section */}
-      <section className="container mx-auto px-4 py-8">
+      <section className="mx-auto w-full max-w-7xl px-4 py-8 md:px-6">
         <div className="max-w-md mx-auto">
           <Input 
             type="search" 
             placeholder="Search for coffee beans, equipment..." 
-            className="w-full"
+            className="w-full border-amber-200 bg-white"
           />
         </div>
       </section>
 
       {/* Categories Section */}
-      <section className="container mx-auto px-4 py-16">
+      <section className="mx-auto w-full max-w-7xl px-4 py-16 md:px-6">
         <h2 className="text-3xl font-bold text-center mb-12 text-amber-900">
           Shop by Category
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
+          <div className="rounded-lg border border-amber-100 bg-white shadow-sm p-6 text-center">
             <h3 className="text-xl font-semibold mb-4">Coffee Beans</h3>
             <p className="text-gray-600 mb-4">Premium beans from around the world</p>
             <Button variant="outline">Explore Beans</Button>
           </div>
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
+          <div className="rounded-lg border border-amber-100 bg-white shadow-sm p-6 text-center">
             <h3 className="text-xl font-semibold mb-4">Equipment</h3>
             <p className="text-gray-600 mb-4">Professional brewing equipment</p>
             <Button variant="outline">Browse Equipment</Button>
           </div>
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
+          <div className="rounded-lg border border-amber-100 bg-white shadow-sm p-6 text-center">
             <h3 className="text-xl font-semibold mb-4">Accessories</h3>
             <p className="text-gray-600 mb-4">Cups, filters, and more</p>
             <Button variant="outline">View Accessories</Button>

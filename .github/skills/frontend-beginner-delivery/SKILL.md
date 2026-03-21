@@ -26,6 +26,15 @@ user-invocable: true
 4. Deployment target (for example: Vercel, Docker, custom server)
 5. Definition of done (functional + visual + performance)
 
+## Package Manager Preference
+- Default to Bun for install, run, test, and build commands in this project.
+- Use npm only if Bun is unavailable or explicitly requested.
+- Preferred command patterns:
+   - bun install
+   - bun run dev
+   - bun run test:e2e
+   - bun run build
+
 ## Workflow
 1. Clarify scope in one sentence and list deliverables.
 2. Inspect current UI patterns and constraints in the codebase before designing.
@@ -42,7 +51,7 @@ user-invocable: true
    - Integration tests for API contracts or data flow.
    - UI behavior checks for major user paths.
 7. Run verification.
-   - Lint, typecheck, tests, and build all pass.
+   - Lint, typecheck, tests, and build all pass (using Bun commands by default).
    - Responsive checks for mobile and desktop.
    - Accessibility spot-check (semantic labels, focus visibility, keyboard path).
 8. Prepare deployment notes.

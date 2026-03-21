@@ -7,6 +7,13 @@
         "@modelcontextprotocol/server-git",
         "."
       ]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ]
     }
   }
 }

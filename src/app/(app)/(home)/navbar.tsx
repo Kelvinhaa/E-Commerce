@@ -21,8 +21,8 @@ const NavbarItems = ({
     return (
     <Link href={href}>
         <Button variant={'outline'} className={`border-0 bg-transparent rounded-full 
-        hover:bg-amber-100 hover:text-amber-700 hover:shadow-md hover:scale-105 transition-all
-        ${isActive ? 'bg-amber-100 text-amber-700 shadow-md' : ''}`}>
+        hover:bg-amber-50 hover:text-amber-700 hover:shadow-sm transition-all
+        ${isActive ? 'bg-amber-50 text-amber-700 shadow-sm' : ''}`}>
             {children}
         </Button>
     </Link>
@@ -31,6 +31,7 @@ const NavbarItems = ({
 
 const navbaritem = [
     {href : "/", children: "Home"},
+    {href : "/products", children: "Products"},
     {href : "/about", children: "About"},
     {href : "/Pricing", children: "Pricing"},
     {href : "/Contact", children: "Contact"},
@@ -39,28 +40,31 @@ const navbaritem = [
 export const Navbar = () => {
     const pathname = usePathname();
     return (
-        <nav className="h-20 justify-between flex border-b font-medium bg-amber-50" >
-            <Link href='/' className='flex items-center'>
-                <span className={`text-5xl font-semibold ${inter.className}`}>BrewMarket</span>
-            </Link>
-            <div className='flex items-center gap-x-4 lg:flex'>
-                {navbaritem.map((item, idx) => (
-                 <NavbarItems key={item.href + idx} href={item.href}
-                 isActive={pathname === item.href}>
-                {item.children}
-                 </NavbarItems>
-                ))}
-            </div>
+        <nav className="border-b border-amber-100 font-medium bg-white/95" >
+            <div className='mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-4 md:px-6'>
+                <Link href='/' className='flex shrink-0 items-center'>
+                    <span className={`text-4xl leading-none font-semibold lg:text-5xl ${inter.className}`}>BrewMarket</span>
+                </Link>
 
-            <div className='flex gap-x-5 items-center'>
-                <Button asChild variant={'ghost'}
-                className='border-0 text-black hover:text-amber-700 hover:border-0 transition-colors'>
-                    <Link href='/sign-in'>Log In</Link>
-                </Button>
-                <Button asChild variant={'ghost'}
-                className='border-0 black hover:text-amber-700 hover:border-0'>
-                    <Link href="/sign-up">Checkout</Link>
-                </Button>
+                <div className='hidden flex-1 items-center justify-center gap-x-2 px-6 md:flex lg:gap-x-4'>
+                    {navbaritem.map((item, idx) => (
+                    <NavbarItems key={item.href + idx} href={item.href}
+                    isActive={pathname === item.href}>
+                    {item.children}
+                    </NavbarItems>
+                    ))}
+                </div>
+
+                <div className='flex shrink-0 items-center gap-x-2 md:gap-x-4'>
+                    <Button asChild variant={'ghost'} size={'sm'}
+                    className='h-10 border-0 text-black hover:bg-amber-50 hover:text-amber-700 hover:border-0 transition-colors'>
+                        <Link href='/sign-in'>Log In</Link>
+                    </Button>
+                    <Button asChild variant={'ghost'} size={'sm'}
+                    className='h-10 border-0 text-black hover:bg-amber-50 hover:text-amber-700 hover:border-0'>
+                        <Link href="/sign-up">Checkout</Link>
+                    </Button>
+                </div>
             </div>
         </nav>
     );
