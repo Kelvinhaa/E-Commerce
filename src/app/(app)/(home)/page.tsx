@@ -2,11 +2,11 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { Search } from "lucide-react";
 import Link from "next/link";
 
-const heroContainer = {
+const heroContainer: Variants = {
   hidden: {},
   show: {
     transition: {
@@ -16,14 +16,14 @@ const heroContainer = {
   },
 };
 
-const fadeInUp = {
+const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 26 },
   show: {
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.52,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   },
 };
