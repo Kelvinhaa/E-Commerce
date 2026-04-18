@@ -1,14 +1,22 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const dmsans = DM_Sans({
-  subsets: ['latin']
-})
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-body",
+});
+
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-display",
+  weight: ["600", "700", "800"],
+});
 
 export const metadata: Metadata = {
-  title: "BrewMarkets",
-  description: "Learn more about BrewMarket and our mission",
+  title: "BrewMarket | Specialty Coffee Marketplace",
+  description:
+    "A curated coffee marketplace connecting Australian roasters, cafe owners, and home brewers.",
 };
 
 export default function RootLayout({
@@ -18,9 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${dmsans.className} antialiased`}
-      >
+      <body className={`${inter.variable} ${playfairDisplay.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>
